@@ -1,5 +1,17 @@
+import About from "./components/about";
+import Home from "./components/home";
+import NavBar from "./components/navbar";
+import SocialLinks from "./components/social-links";
+
 function App() {
-  return <div className="text-3xl font-bold underline">Merhaba portfolio</div>;
+  return (
+    <div>
+      <NavBar />
+      <Home />
+      <About />
+      <SocialLinks />
+    </div>
+  );
 }
 
 export default App;
