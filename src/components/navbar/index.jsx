@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { MdNightsStay, MdWbSunny } from "react-icons/md";
 import { Link } from "react-scroll";
 
-const NavBar = () => {
+const NavBar = ({ darkMode, setDarkMode }) => {
   const [nav, setNav] = useState(false);
 
   const links = [
@@ -29,16 +30,12 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black ">
-      <div>
-        <h1 className="text-5xl font-signature ml-2">Yavuz</h1>
-      </div>
-
+    <div className="flex justify-end md:justify-center items-center w-full h-20 px-4 text-black dark:text-white bg-white dark:bg-black fixed">
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer text-xl capitalize font-medium text-gray-500 hover:scale-105 duration-200"
+            className="px-4 cursor-pointer text-xl capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200"
           >
             <Link to={link} smooth duration={500}>
               {link}
@@ -47,9 +44,17 @@ const NavBar = () => {
         ))}
       </ul>
 
+      <div onClick={() => setDarkMode(!darkMode)} className="flex ml-20">
+        {darkMode ? (
+          <MdWbSunny className="text-2xl cursor-pointer" />
+        ) : (
+          <MdNightsStay className="text-2xl cursor-pointer" />
+        )}
+      </div>
+
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
+        className="cursor-pointer pr-4 z-50 text-gray-500 md:hidden"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>

@@ -1,20 +1,21 @@
+import { useState } from "react";
 import About from "./components/about";
 import Contact from "./components/contact";
 import Home from "./components/home";
 import NavBar from "./components/navbar";
-import SocialLinks from "./components/social-links";
 import Techs from "./components/techs";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
   return (
-    <>
-      <NavBar />
+    <div className={darkMode && "dark"}>
+      <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
+
       <Home />
       <About />
       <Techs />
       <Contact />
-      <SocialLinks />
-    </>
+    </div>
   );
 }
 
