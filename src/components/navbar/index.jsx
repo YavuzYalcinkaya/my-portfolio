@@ -21,7 +21,7 @@ const NavBar = ({ darkMode, setDarkMode }) => {
     },
     {
       id: 4,
-      link: "experience",
+      link: "technologies",
     },
     {
       id: 5,
@@ -33,18 +33,22 @@ const NavBar = ({ darkMode, setDarkMode }) => {
     <div className="flex justify-end md:justify-center items-center w-full h-20 px-4 text-black dark:text-white bg-white dark:bg-black fixed">
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
-          <li
+          <Link
             key={id}
-            className="px-4 cursor-pointer text-xl capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200"
+            className="px-4 cursor-pointer text-xl capitalize font-medium text-gray-500 hover:scale-105  duration-200"
+            to={link}
+            smooth
+            duration={500}
           >
-            <Link to={link} smooth duration={500}>
-              {link}
-            </Link>
-          </li>
+            {link}
+          </Link>
         ))}
       </ul>
 
-      <div onClick={() => setDarkMode(!darkMode)} className="flex ml-20">
+      <div
+        onClick={() => setDarkMode(!darkMode)}
+        className="hidden md:flex ml-20"
+      >
         {darkMode ? (
           <MdWbSunny className="text-2xl cursor-pointer" />
         ) : (

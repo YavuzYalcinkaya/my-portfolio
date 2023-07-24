@@ -1,9 +1,6 @@
 const Contact = () => {
   return (
-    <div
-      name="contact"
-      className="w-full bg-white dark:bg-gradient-to-b from-black to-gray-800 p-4 text-black dark:text-white"
-    >
+    <div name="contact" className="w-full p-4">
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-black dark:border-gray-500">
@@ -14,7 +11,7 @@ const Contact = () => {
 
         <div className=" flex justify-center items-center">
           <form
-            action="https://getform.io/f/61c99527-2b15-42cf-9b55-ad37d2f7daa6"
+            action="https://getform.io/f/3d1b956b-59a8-400c-ab78-4ee14f13b8ef"
             method="POST"
             className=" flex flex-col w-full md:w-1/2"
           >
@@ -22,23 +19,23 @@ const Contact = () => {
               type="text"
               name="name"
               placeholder="Enter your name"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="p-2 bg-transparent border-2 rounded-md  focus:outline-none"
             />
             <input
               type="text"
               name="email"
               placeholder="Enter your email"
-              className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="my-4 p-2 bg-transparent border-2 rounded-md focus:outline-none"
             />
             <textarea
               name="message"
               placeholder="Enter your message"
               rows="10"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="p-2 bg-transparent border-2 rounded-md  focus:outline-none"
             ></textarea>
 
             <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
-              Let&apos;s talk
+              Send Message
             </button>
           </form>
         </div>

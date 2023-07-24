@@ -6,8 +6,9 @@ import nextjs from "../../assets/nextjs.png";
 import graphql from "../../assets/graphql.png";
 import github from "../../assets/github.png";
 import tailwind from "../../assets/tailwind.png";
+import typescript from "../../assets/typescript.png";
 
-const Techs = () => {
+const Techs = ({ darkMode }) => {
   const techs = [
     {
       id: 1,
@@ -43,7 +44,7 @@ const Techs = () => {
       id: 6,
       src: nextjs,
       title: "Next JS",
-      style: "shadow-black",
+      style: darkMode ? "shadow-white" : "shadow-black",
     },
     {
       id: 7,
@@ -55,21 +56,24 @@ const Techs = () => {
       id: 8,
       src: github,
       title: "GitHub",
-      style: "shadow-gray-400",
+      style: darkMode ? "shadow-gray-400" : "shadow-black",
+    },
+    {
+      id: 9,
+      src: typescript,
+      title: "TypeScript",
+      style: "shadow-blue-600",
     },
   ];
 
   return (
-    <div
-      name="experience"
-      className="bg-white dark:bg-gradient-to-b from-gray-800 to-black w-full pt-10"
-    >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full  text-black dark:text-white">
+    <div name="technologies" className="w-full pt-20">
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full">
         <div>
-          <p className="text-4xl font-bold border-b-4 border-black dark:border-gray-500 p-2 inline text-black dark:text-white">
+          <p className="text-4xl font-bold border-b-4 border-black dark:border-gray-500 p-2 inline">
             Technologies
           </p>
-          <p className="py-6 text-black dark:text-white">
+          <p className="py-6">
             These are the technologies I&apos;ve worked with
           </p>
         </div>
@@ -81,7 +85,7 @@ const Techs = () => {
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
               <img src={src} alt="" className="w-20 mx-auto" />
-              <p className="mt-4 text-black dark:text-white">{title}</p>
+              <p className="mt-4">{title}</p>
             </div>
           ))}
         </div>
