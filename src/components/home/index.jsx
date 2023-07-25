@@ -47,10 +47,12 @@ const Home = () => {
       <h2 className="text-5xl text-rose-600 font-bold">Yavuz Yalçınkaya</h2>
       <h3 className="py-3 text-2xl">Frontend Developer</h3>
       <p className="max-w-xl text-xl font-light text-gray-500">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-        architecto quam temporibus quia harum quas eius aliquid officiis
-        voluptates autem suscipit atque debitis hic. Neque molestias ducimus
-        velit aspernatur fugiat?{" "}
+        I develop software applications with javascript technologies. I have
+        worked on projects of varying sizes and complexities, from simple
+        landing pages to full-scale web applications. I am comfortable
+        collaborating with cross-functional teams, communicating effectively
+        with designers and backend developers to ensure that projects are
+        delivered on time and to a high standard.
       </p>
       <div className="flex justify-evenly py-8 lg:py-16 w-full md:w-1/3">
         <a
