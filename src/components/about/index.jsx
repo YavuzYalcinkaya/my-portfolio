@@ -9,23 +9,21 @@ const About = () => {
         </div>
 
         <p className="text-xl mt-10">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius,
-          deserunt illum mollitia officiis qui exercitationem perferendis neque
-          quasi a recusandae necessitatibus tempora iusto! Blanditiis error
-          iste, totam fugiat recusandae rerum laborum perferendis molestiae
-          aperiam asperiores nemo. Magni dolor maxime debitis vitae, eaque hic
-          ab mollitia voluptatibus, a nostrum eveniet laborum!
+          Hello! My name is Yavuz. I live in Ankara. Thanks to my interest and
+          passion for technology, I stepped into the software world and I love
+          learning, exploring and developing projects. I mainly develop projects
+          with React and Next.js.
         </p>
 
         <br />
 
         <p className="text-xl">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-          pariatur, vel similique sint, nobis aspernatur ut praesentium
-          explicabo ipsam aliquid quasi laboriosam et culpa possimus repudiandae
-          quisquam ullam maiores ab unde. Fugiat odio mollitia nemo alias.
-          Commodi facilis atque nulla vero voluptatem explicabo. Quibusdam,
-          magni quo! Eum cupiditate debitis labore.
+          I take great pleasure in developing my own projects and writing code.
+          You can find more about my own software projects and open source
+          projects that I have contributed to on this site. This site is a
+          portfolio site created to showcase my experiences, talents and
+          interests. Here you can review my work, get in touch and learn more
+          about my projects.
         </p>
       </div>
     </div>
