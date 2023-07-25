@@ -1,7 +1,7 @@
 import brentfilms from "../../assets/brentfilms.png";
 import brentshop from "../../assets/brentshop.png";
-// import movieapp from "../../assets/movieapp.png";
-// import nexter from "../../assets/nexter.png";
+import movieapp from "../../assets/movieapp.png";
+import nexter from "../../assets/nexter.png";
 import tour from "../../assets/tour.png";
 
 const Portfolio = () => {
@@ -13,20 +13,20 @@ const Portfolio = () => {
       github: "https://github.com/YavuzYalcinkaya/brentshop",
       demo: "https://brentshop.vercel.app/",
     },
-    // {
-    //   id: 2,
-    //   image: movieapp,
-    //   title: "MovieApp",
-    //   github: "https://github.com/YavuzYalcinkaya/Movie-App",
-    //   demo: "https://movie-app-ry.netlify.app/",
-    // },
-    // {
-    //   id: 3,
-    //   image: nexter,
-    //   title: "Nexter",
-    //   github: "https://github.com/YavuzYalcinkaya/Nexter-Site",
-    //   demo: "https://nexter-site-project.netlify.app/",
-    // },
+    {
+      id: 2,
+      image: movieapp,
+      title: "MovieApp",
+      github: "https://github.com/YavuzYalcinkaya/Movie-App",
+      demo: "https://movie-app-ry.netlify.app/",
+    },
+    {
+      id: 3,
+      image: nexter,
+      title: "Nexter",
+      github: "https://github.com/YavuzYalcinkaya/Nexter-Site",
+      demo: "https://nexter-site-project.netlify.app/",
+    },
     {
       id: 4,
       image: tour,
