@@ -1,4 +1,4 @@
-// import brentfilms from "../../assets/brentfilms.png";
+import brentfilms from "../../assets/brentfilms.png";
 import brentshop from "../../assets/brentshop.png";
 // import movieapp from "../../assets/movieapp.png";
 // import nexter from "../../assets/nexter.png";
@@ -34,28 +34,28 @@ const Portfolio = () => {
       github: "https://github.com/YavuzYalcinkaya/Natours-Tour-Booking-Site",
       demo: "https://natours-tour-booking.netlify.app/",
     },
-    // {
-    //   id: 5,
-    //   image: brentfilms,
-    //   title: "Brentfilms",
-    //   github: "https://github.com/YavuzYalcinkaya/brentfilms",
-    //   demo: "https://brentfilms.vercel.app/",
-    // },
+    {
+      id: 5,
+      image: brentfilms,
+      title: "Brentfilms",
+      github: "https://github.com/YavuzYalcinkaya/brentfilms",
+      demo: "https://brentfilms.vercel.app/",
+    },
   ];
   return (
     <div
       name="portfolio"
       className="w-full pt-20 max-w-screen-lg p-4 mx-auto flex flex-col justify-center"
     >
-      <div>
+      <div className="text-center lg:text-start">
         <h2 className="text-4xl font-bold inline border-b-4 border-black dark:border-gray-500">
           Portfolio
         </h2>
       </div>
-      <p className="mt-10 text-xl">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quaerat
-        eligendi fuga voluptatibus omnis officiis esse porro, harum facilis
-        architecto!
+      <p className="mt-10 text-xl text-center lg:text-start">
+        My projects featured here are a reflection of my experiences and
+        creativity. You can see and review the projects that I have been working
+        on meticulously.
       </p>
       <div className="mt-10 grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
         {projects.map(({ id, image, title, github, demo }) => (

@@ -1,14 +1,14 @@
 const About = () => {
   return (
-    <div name="about" className="w-full">
+    <div name="about" className="w-full pt-14">
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full">
-        <div>
-          <h2 className="text-4xl inline font-bold border-b-4 border-black dark:border-gray-500">
+        <div className="text-center lg:text-start">
+          <h2 className=" text-4xl inline font-bold border-b-4 border-black dark:border-gray-500">
             About
           </h2>
         </div>
 
-        <p className="text-xl mt-10">
+        <p className="text-xl mt-10 text-center lg:text-start">
           Hello! My name is Yavuz. I live in Ankara. Thanks to my interest and
           passion for technology, I stepped into the software world and I love
           learning, exploring and developing projects. I mainly develop projects
@@ -17,7 +17,7 @@ const About = () => {
 
         <br />
 
-        <p className="text-xl">
+        <p className="text-xl text-center lg:text-start">
           I take great pleasure in developing my own projects and writing code.
           You can find more about my own software projects and open source
           projects that I have contributed to on this site. This site is a

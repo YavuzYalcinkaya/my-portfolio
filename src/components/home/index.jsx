@@ -9,8 +9,8 @@ const Home = () => {
       className="pt-32 flex flex-col justify-start items-center p-5 w-full text-center"
     >
       <h2 className="text-5xl text-rose-600 font-bold">Yavuz Yalçınkaya</h2>
-      <h3 className="py-3 text-2xl">Frontend Developer</h3>
-      <p className="max-w-xl text-xl font-light text-gray-500">
+      <h3 className="py-3 text-2xl font-semibold">Frontend Developer</h3>
+      <p className="max-w-xl text-xl font-light text-gray-600 dark:text-white">
         I develop software applications with javascript technologies. I have
         worked on projects of varying sizes and complexities, from simple
         landing pages to full-scale web applications. I am comfortable

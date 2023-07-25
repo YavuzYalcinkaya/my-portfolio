@@ -69,12 +69,12 @@ const Techs = ({ darkMode }) => {
   return (
     <div name="technologies" className="w-full pt-20">
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full">
-        <div>
+        <div className="text-center lg:text-start">
           <p className="text-4xl font-bold border-b-4 border-black dark:border-gray-500 p-2 inline">
             Technologies
           </p>
-          <p className="py-6">
-            These are the technologies I&apos;ve worked with
+          <p className="py-6 text-xl text-center lg:text-start">
+            These are the technologies I&apos;ve worked with.
           </p>
         </div>
 
