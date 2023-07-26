@@ -17,14 +17,18 @@ const NavBar = ({ darkMode, setDarkMode }) => {
     },
     {
       id: 3,
-      link: "portfolio",
+      link: "experience",
     },
     {
       id: 4,
-      link: "technologies",
+      link: "portfolio",
     },
     {
       id: 5,
+      link: "technologies",
+    },
+    {
+      id: 6,
       link: "contact",
     },
   ];
@@ -35,7 +39,7 @@ const NavBar = ({ darkMode, setDarkMode }) => {
         {links.map(({ id, link }) => (
           <Link
             key={id}
-            className="px-4 cursor-pointer text-xl capitalize font-medium text-gray-500 hover:scale-105  duration-200 dark:hover:text-white"
+            className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105  duration-200 dark:hover:text-white"
             to={link}
             smooth
             duration={500}
