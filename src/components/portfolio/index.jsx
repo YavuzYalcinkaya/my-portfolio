@@ -1,6 +1,6 @@
 import brentfilms from "../../assets/brentfilms.png";
 import brentshop from "../../assets/brentshop.png";
-import movieapp from "../../assets/movieapp.png";
+import brentcars from "../../assets/brentcars.png";
 import nexter from "../../assets/nexter.png";
 import tour from "../../assets/tour.png";
 
@@ -15,10 +15,10 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      image: movieapp,
-      title: "MovieApp",
-      github: "https://github.com/YavuzYalcinkaya/Movie-App",
-      demo: "https://movie-app-ry.netlify.app/",
+      image: brentcars,
+      title: "BrentCars",
+      github: "https://github.com/YavuzYalcinkaya/brentcars",
+      demo: "https://brentcars.vercel.app/",
     },
     {
       id: 3,
