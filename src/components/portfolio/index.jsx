@@ -3,6 +3,7 @@ import brentshop from "../../assets/brentshop.png";
 import brentcars from "../../assets/brentcars.png";
 import nexter from "../../assets/nexter.png";
 import tour from "../../assets/tour.png";
+import brentshoe from "../../assets/brentshoe.png";
 
 const Portfolio = () => {
   const projects = [
@@ -40,6 +41,13 @@ const Portfolio = () => {
       title: "Brentfilms",
       github: "https://github.com/YavuzYalcinkaya/brentfilms",
       demo: "https://brentfilms.vercel.app/",
+    },
+    {
+      id: 6,
+      image: brentshoe,
+      title: "BrentShoe",
+      github: "https://github.com/YavuzYalcinkaya/brentshoe",
+      demo: "https://brentshoe.vercel.app/",
     },
   ];
   return (
